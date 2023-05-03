@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANZ Link</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .hyperlink-container {
+            margin: 1rem;
+            text-align: left;
+        }
+    </style>
+    <script>
+        function handleClick() {
+            window.location.href = 'intent://plus.anz/datain?success=true#Intent;scheme=https;action=android.intent.action.VIEW;package=com.anz.lotus.debug;S.browser_fallback_url=https://plus.anz/datain;end;';
+        }
+    </script>
+</head>
+<body>
+    <div class="hyperlink-container">
+        <a href="#" onclick="handleClick();">
+            anzplus://datain?consent_id=12345abcdefsuccess=true
+        </a>
+    </div>
+</body>
+</html>
